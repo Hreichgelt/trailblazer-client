@@ -1,0 +1,132 @@
+.jumbotron {
+    background-image: url("../img/nationalpark5.jpg");
+    background-size: cover;
+    background-position: center;
+    font-size: 72px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: antiquewhite;
+    border-radius: 5%;
+}
+
+#h1 {
+    text-align: center;
+}
+
+#trailblazers {
+    text-decoration: none;
+    color: blanchedalmond;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 5rem;
+    position: relative;
+    top: 5%;
+}
+
+#loggedindash {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+#logout {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+#loggedoutdash {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+#loginlink {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.container {
+    border-radius: 5%;
+}
+
+.card-text {
+    font-weight: 700;
+}
+
+#park-image {
+    margin: 2rem;
+    justify-content: center;
+    border-radius: 2%;
+    width:94%;
+}
+
+#info-card {
+    viewport-fit: auto;
+    margin: 2rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15%;
+    position:absolute;
+    top: 10%;
+    left: 47%;
+    transform: translate(-50%, -5%);
+    color: beige;
+    background-color: rgba(8, 8, 8, 0.80);
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+html {
+    color: black;
+    background-image: none !important;
+}
+
+#signup-form, #login-form, .login-header {
+    color:white;
+}
+
+@media only screen and (max-width: 480px)
+{
+    #trailblazers {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 769px)
+{
+    #image-div {
+        width: 75%;
+        height: auto;
+    }
+
+    #park-image {
+        margin-top: 2%;
+        margin-left: 12%;
+    }
+
+    #info-card {
+        margin-left: 3%;
+    }
+}
+
+@media only screen and (max-width: 1199px)
+{
+    #image-div {
+        viewport-fit: auto;
+        margin: 2rem;
+        justify-content: center;
+        border-radius: 2%;
+    }
+    
+    #info-card {
+        viewport-fit: auto;
+        position: relative;
+        top:0%;
+        left: 47%;
+        justify-content: center;
+    }
+
+}

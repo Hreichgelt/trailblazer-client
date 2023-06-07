@@ -1,0 +1,53 @@
+<div class="container card mb-3" id="park-container">
+
+
+  <div id="image-div">
+    <img src="{{imgURL}}" alt="{{name}}" id="park-image">
+  </div>
+
+  <div class="col-md-10 card-body" id="info-card">
+
+    <h2 class="p-3" style="font-weight: bold;">{{name}}</h2>
+    
+    {{#if checkFavorite}}
+    <button type="button" id="favorite-check" value="{{name}}"class="btn btn-outline-success p-1 mb-2">Unfavorite</button>
+    {{else if loggedIn}}
+    <button type="button" id="favorite-check" value="{{name}}" class="btn btn-outline-success p-1 mb-2">Favorite</button>
+    {{/if}}
+
+    <h5>Address:</h5>
+
+    <p id="parkAddress" class="card-text">
+      {{address.line1}},
+      {{address.city}},
+      {{address.stateCode}},
+      {{address.postalCode}}
+    </p>
+
+    <h5>Contact:</h5>
+
+    <p id="parkContact" class="card-text">
+      {{contact}}
+    </p>
+
+    <h5>Description:</h5>
+
+    <p id="parkDescription" class="card-text">
+      {{description}}
+    </p>
+
+    <h5>Hours of Operation:</h5>
+
+    <ul id="parkHours" class="card-text mr-4">
+      <li>Monday: {{hoursOfOp.monday}}</li>
+      <li>Tuesday: {{hoursOfOp.tuesday}}</li>
+      <li>Wednesday: {{hoursOfOp.wednesday}}</li>
+      <li>Thursday: {{hoursOfOp.thursday}}</li>
+      <li>Friday: {{hoursOfOp.friday}}</li>
+      <li>Saturday: {{hoursOfOp.saturday}}</li>
+      <li>Sunday: {{hoursOfOp.sunday}}</li>
+    </ul>
+
+  </div>
+
+</div>
